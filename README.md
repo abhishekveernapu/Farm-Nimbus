@@ -1,26 +1,36 @@
 # 🌾 Farm-Nimbus AI
 
-Farm-Nimbus AI is a comprehensive, multilingual agricultural dashboard designed to empower farmers with actionable insights. By combining real-time weather data with artificial intelligence, the platform delivers personalized crop recommendations and critical weather alerts directly to users in both English and Telugu.
+Farm-Nimbus AI is a comprehensive, multilingual agricultural dashboard designed to empower farmers with actionable insights. By combining real-time weather data with artificial intelligence, the platform delivers personalized crop recommendations and critical weather alerts directly to users across multiple languages.
 
 ## ✨ Key Features
 
-* **🌍 Multilingual Interface:** Full support for English and Telugu to ensure accessibility for a wider agricultural community.
-* **🌦️ Real-Time Weather Alerts:** Timely notifications and forecasts to help farmers prepare for changing weather conditions and protect their yields.
-* **🧠 AI-Driven Recommendations:** Smart, context-aware suggestions for crop management, planting schedules, and resource optimization based on current environmental data.
-* **📊 Interactive Dashboard:** A clean, intuitive user interface for monitoring farm metrics and weather patterns at a glance.
+* **🌍 Multilingual Interface:** Native translation support (powered by `deep-translator`) ensuring accessibility for a wider agricultural community, including English and Telugu.
+* **🌦️ Real-Time Weather & Alerts:** Timely notifications and forecasts to help farmers prepare for changing weather conditions, with Twilio integration for SMS alerts.
+* **🧠 AI-Driven Recommendations:** Smart, context-aware suggestions for crop management, planting schedules, and resource optimization.
+* **📊 Interactive Dashboard:** A clean, intuitive user interface featuring interactive charts (Recharts) for monitoring farm metrics and weather patterns at a glance.
 
 ## 🛠️ Technology Stack
 
-* **Frontend:** React.js
-* **Backend:** Node.js, Express.js
-* **Database:** MongoDB
-* **Integrations:** Weather API (for real-time forecasting), AI/ML processing modules
-* **Styling:** CSS / Material-UI (or preferred styling framework)
+**Frontend:**
+* **Framework:** React.js (v19) with Vite
+* **Routing:** React Router DOM
+* **Data Visualization:** Recharts
+* **Icons & Styling:** Lucide-React
+* **HTTP Client:** Axios
+
+**Backend:**
+* **Framework:** FastAPI (Python)
+* **Server:** Uvicorn
+* **Database Driver:** Motor (Async MongoDB) / PyMongo
+* **Authentication:** Python-JOSE, Passlib, Bcrypt
+* **Integrations:** Twilio (Notifications), Deep-Translator (Multilingual support)
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine.
+* [Node.js](https://nodejs.org/) and npm (for the frontend)
+* [Python 3.8+](https://www.python.org/) (for the backend)
+* MongoDB database (local or Atlas)
 
 ### Installation
 
@@ -28,31 +38,49 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
    ```bash
    git clone [https://github.com/abhishekveernapu/Farm-Nimbus.git](https://github.com/abhishekveernapu/Farm-Nimbus.git)
    cd Farm-Nimbus
-
    ```
 
-2. **Install Frontend Dependencies:**
+2. **Setup the Backend (FastAPI):**
    ```bash
-   cd frontend
-   npm install
+   cd backend
+   # Create a virtual environment
+   python -m venv venv
+   
+   # Activate the virtual environment
+   # On Windows: venv\Scripts\activate
+   # On macOS/Linux: source venv/bin/activate
+   
+   # Install dependencies
+   pip install -r requirements.txt
    ```
 
-3. **Install Backend Dependencies:**
+3. **Setup the Frontend (React/Vite):**
    ```bash
-   cd ../backend
+   cd ../frontend
    npm install
    ```
 
 4. **Environment Variables:**
-   Create a `.env` file in the `backend` directory and add the necessary API keys and database URIs:
+   Create a `.env` file in the `backend` directory:
    ```env
-   PORT=5000
    MONGO_URI=your_mongodb_connection_string
-   WEATHER_API_KEY=your_weather_api_key
-   # Add any other required AI or service keys here
+   TWILIO_ACCOUNT_SID=your_twilio_sid
+   TWILIO_AUTH_TOKEN=your_twilio_token
+   SECRET_KEY=your_jwt_secret_key
+   # Add any other required AI or weather API keys here
    ```
 
 5. **Run the Application:**
    Open two terminal windows:
-   * **Terminal 1 (Backend):** `cd backend && npm run dev`
-   * **Terminal 2 (Frontend):** `cd frontend && npm run dev`
+   
+   * **Terminal 1 (Backend):** ```bash
+     cd backend
+     source venv/bin/activate  # Or Windows equivalent
+     uvicorn server:app --reload
+     ```
+     
+   * **Terminal 2 (Frontend):** ```bash
+     cd frontend
+     npm run dev
+     ```
+     
