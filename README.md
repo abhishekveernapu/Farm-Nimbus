@@ -73,13 +73,15 @@ Farm-Nimbus AI is a comprehensive, multilingual agricultural dashboard designed 
 5. **Run the Application:**
    Open two terminal windows:
    
-   * **Terminal 1 (Backend):** ```bash
+   * **Terminal 1 (Backend):**
+      ```bash
      cd backend
      source venv/bin/activate  # Or Windows equivalent
      uvicorn server:app --reload
      ```
      
-   * **Terminal 2 (Frontend):** ```bash
+   * **Terminal 2 (Frontend):**
+     ```bash
      cd frontend
      npm run dev
      ```
