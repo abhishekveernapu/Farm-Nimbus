@@ -1,0 +1,124 @@
+{
+  "appName": "Farm-Nimbus",
+  "tagline": "AI-Powered Weather Intelligence for Farmers",
+  "hero": {
+    "title": "Empowering Farmers with Smart Weather Intelligence",
+    "subtitle": "Get real-time weather updates and crop-specific recommendations powered by AI",
+    "cta": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "features": {
+    "title": "Key Features",
+    "realtime": {
+      "title": "Real-time Weather",
+      "desc": "Get accurate, localized weather forecasts for your farm"
+    },
+    "ai": {
+      "title": "AI Recommendations",
+      "desc": "Crop-specific advice based on weather conditions"
+    },
+    "alerts": {
+      "title": "Weather Alerts",
+      "desc": "Timely notifications about extreme weather events"
+    },
+    "multilingual": {
+      "title": "Multilingual",
+      "desc": "Available in English, Telugu, Hindi, Tamil, Kannada, and Malayalam"
+    }
+  },
+  "register": {
+    "title": "Register as a Farmer",
+    "name": "Your Name",
+    "namePlaceholder": "Enter your name",
+    "location": "Location",
+    "locationPlaceholder": "Enter your village/city",
+    "crop": "Primary Crop",
+    "cropPlaceholder": "Select your crop",
+    "language": "Preferred Language",
+    "submit": "Register",
+    "success": "Registration successful!",
+    "error": "Registration failed. Please try again.",
+    "phone": "Phone Number",
+    "smsAlerts": "SMS Alerts",
+    "voiceAlerts": "Voice Alerts"
+  },
+  "login": {
+    "phoneHint": "Enter the phone number you registered with",
+    "locationHint": "Enter the exact name and location you registered with",
+    "loggingIn": "Logging in...",
+    "noAccount": "Don't have an account?",
+    "registerNow": "Register Now"
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "currentWeather": "Current Weather",
+    "forecast": "Weather Forecast",
+    "recommendations": "Recommendations",
+    "alerts": "Weather Alerts",
+    "profile": "Profile",
+    "expertDashboard": "Expert Dashboard",
+    "logout": "Logout",
+    "lastUpdated": "Last Updated"
+  },
+  "weather": {
+    "temperature": "Temperature",
+    "feelsLike": "Feels Like",
+    "humidity": "Humidity",
+    "windSpeed": "Wind Speed",
+    "pressure": "Pressure",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "loading": "Loading weather data...",
+    "error": "Unable to fetch weather data"
+  },
+  "recommendations": {
+    "title": "Today's Recommendations",
+    "noData": "No recommendations available",
+    "irrigation": "Irrigation",
+    "temperature": "Temperature",
+    "humidity": "Humidity",
+    "rainfall": "Rainfall",
+    "wind": "Wind",
+    "pest": "Pest Control",
+    "general": "General",
+    "high": "High Priority",
+    "medium": "Medium Priority",
+    "low": "Low Priority"
+  },
+  "alerts": {
+    "title": "Weather Alerts",
+    "noAlerts": "No alerts at this time",
+    "extremeHeat": "Extreme Heat Warning",
+    "extremeCold": "Cold Weather Alert",
+    "heavyRain": "Heavy Rain Expected",
+    "highWind": "Strong Wind Advisory"
+  },
+  "crops": {
+    "Rice": "Rice",
+    "Wheat": "Wheat",
+    "Cotton": "Cotton",
+    "Maize": "Maize",
+    "Sugarcane": "Sugarcane",
+    "Tomato": "Tomato",
+    "Potato": "Potato",
+    "Onion": "Onion",
+    "Chili": "Chili",
+    "Groundnut": "Groundnut"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "close": "Close",
+    "login": "Login to Your Account"
+  }
+}
